@@ -42,7 +42,6 @@
           data-separator="---SLIDE_H---"
           data-separator-vertical="---SLIDE_V---"
           data-notes="^Note:"
-          data-charset="iso-8859-15"
         ></section>
       </div>
     </div>
@@ -59,7 +58,8 @@
           { src: "plugin/markdown/markdown.js" },
           { src: "plugin/notes/notes.js", async: true },
           { src: "plugin/highlight/highlight.js", async: true }
-        ]
+        ],
+        hash: true
       });
     </script>
   </body>
