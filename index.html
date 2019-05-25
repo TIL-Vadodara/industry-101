@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>Software Industry-101</title>
+    <title>A Fresher's Guide to Software Industry</title>
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/reveal.min.css" />
@@ -26,6 +26,17 @@
         : "css/print/paper.css";
       document.getElementsByTagName("head")[0].appendChild(link);
     </script>
+
+    <style>
+      .reveal.reveal img {
+        max-height: calc(75vh);
+        max-width: calc(75vw);
+      }
+      .reveal pre code{
+        line-height: 1.5;
+        font-size: xx-large;
+      }
+    </style>
   </head>
   <body>
     <div class="reveal">
@@ -35,7 +46,6 @@
           data-separator="---SLIDE_H---"
           data-separator-vertical="---SLIDE_V---"
           data-notes="^Note:"
-          data-charset="iso-8859-15"
         ></section>
       </div>
     </div>
@@ -52,7 +62,8 @@
           { src: "plugin/markdown/markdown.js" },
           { src: "plugin/notes/notes.js", async: true },
           { src: "plugin/highlight/highlight.js", async: true }
-        ]
+        ],
+        hash: true
       });
     </script>
   </body>
